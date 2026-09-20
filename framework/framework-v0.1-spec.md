@@ -37,6 +37,7 @@ Discovery/research/brainstorming/assessment may precede specification when the p
 - Adaptive SDD Engine;
 - Architecture/Functional/UX/NFR/Security engines;
 - Planning/WBS/Dependency/Forecasting;
+- Execution Tracking & Delivery Control (GitHub Projects/Issues);
 - Testing & Implementation Assurance;
 - Quality Gates;
 - Traceability;
@@ -52,6 +53,11 @@ Only applicable links are required, but critical omissions must be explicit.
 
 ## Planning spine
 `Scope → WBS → Dependencies → Remaining work → Capacity → Historical duration/throughput → Risks/blockers → Forecast`
+
+## Execution control spine
+`Accepted Work → GitHub Issue/Hierarchy → Owner/Status/Dependencies → Implementation/PR → Validate/Evidence → Done → Measure/Learn`
+
+GitHub Projects is the organizational execution-tracking substrate. The framework defines semantics and gates; GitHub stores/visualizes execution state. Start with the minimum model and add fields/views/automation only for demonstrated control needs.
 
 Dates: TARGET / COMMITMENT / FORECAST / ACTUAL.
 
