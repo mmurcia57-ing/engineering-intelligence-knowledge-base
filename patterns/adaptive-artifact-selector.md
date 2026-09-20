@@ -45,3 +45,19 @@ Before creation:
 
 ## Status
 HYPOTHESIS pending stress test against VECTOR and at least one materially different project.
+
+
+## Product / UX selection additions
+Select artifacts by uncertainty/risk, not ceremony:
+- Journey/Task Flow when user goal or cross-step experience needs clarification.
+- Information Architecture when navigation, grouping, terminology or discovery is material.
+- BPMN/EventStorming when process/domain discovery is material.
+- State Machine when lifecycle complexity is material.
+- Decision Table when business rules branch materially.
+- Experience State Matrix when interactive state completeness is a risk.
+- Wireframe for structure/hierarchy uncertainty.
+- Prototype for interaction/comprehension uncertainty.
+- Visual/System Design when implementation requires concrete visual behavior/tokens/components.
+- Usability validation when task success/comprehension remains uncertain.
+
+Do not create all of them by default.
