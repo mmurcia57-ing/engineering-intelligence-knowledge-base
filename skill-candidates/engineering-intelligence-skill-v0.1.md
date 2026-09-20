@@ -23,3 +23,46 @@ Project classifier; artifact inventory/status; capability-depth matrix; journey 
 
 ## Tool posture
 Use repository-native evidence first. Deterministic automation before agents. Add graph/agent/RAG tooling only when demonstrated need exceeds simpler mechanisms.
+
+
+## Autonomous discovery contract
+The Skill receives a repository/product objective and performs discovery before proposing implementation. It MUST derive missing work from evidence rather than asking the user for a feature wish list.
+
+For every critical capability it MUST:
+1. derive the Core Question;
+2. classify depth as ABSENT / REPRESENTED / FUNCTIONAL / END_TO_END / ASSURED / OPERATIONAL;
+3. traverse lifecycle, history, outcome, recovery and evidence;
+4. classify each deficiency using the framework gap taxonomy;
+5. separate FIX/HARDEN work from evolution and external dependencies;
+6. create only the minimum controlled delta required by NO-REDO.
+
+## Capability anti-false-positive rule
+The Skill MUST NOT mark a capability complete solely because it finds:
+- a domain entity;
+- persistence;
+- an endpoint;
+- a screen;
+- unit tests;
+- a CLOSED specification.
+
+It must prove mission closure for the approved release boundary.
+
+## Execution authority behavior
+When the user has already authorized autonomous execution, the Skill continues phase-to-phase without repeated confirmation. It stops only when a genuine SPEC-BLOCKER, protected external action, missing credential/access, or irreversible human decision prevents safe continuation.
+
+## Convergence evidence
+Before reporting PASS the Skill must prefer current-branch executable evidence:
+- contract/schema checks;
+- backend tests;
+- frontend behavioral tests;
+- security negative paths;
+- relevant NFR/recovery tests;
+- lint/build where applicable;
+- traceability to the controlled delta.
+
+Historical evidence is labeled historical and cannot silently substitute for current evidence.
+
+## Learning extraction
+At the end of a pilot the Skill emits a learning extraction register. Each reusable finding is classified as PROMOTE, HOLD or REJECT and mapped to Framework rule/gate, pattern/method, schema and future Skill behavior.
+
+VECTOR calibration example: Commitment Management proved that Representation != Mission Closure; lifecycle, renegotiation history, outcome verification and reliability semantics were required before END_TO_END could be claimed.
