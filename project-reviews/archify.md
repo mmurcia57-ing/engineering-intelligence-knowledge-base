@@ -1,14 +1,14 @@
 ---
 type: project-review
-status: verified
+status: verified-corrected
 maturity: experimental
 topics: [architecture, visualization, ai-assisted-engineering, skill, html, diagrams]
 last_reviewed: 2026-09-20
 ---
-# Archify — tt-ai/archify
+# Archify — tt-a1i/archify
 
 ## Primary source
-- Repository: https://github.com/tt-ai/archify
+- Repository: https://github.com/tt-a1i/archify
 - Discovery source: MoureDev video/Short supplied by the user.
 
 ## VERIFIED FACT
@@ -50,3 +50,9 @@ Measure completeness, invented elements, readability, edit/regeneration effort, 
 ## Disposition
 **VERIFIED CANDIDATE — ARCHITECTURE VISUALIZATION / COMMUNICATION.**
 Do not promote to standard tool until the experiment passes.
+
+
+## Source correction — 2026-09-20
+The previously recorded owner `tt-ai` was incorrect. The verified upstream repository is `tt-a1i/archify` (letter/number sequence: a1i). The incorrect URL returns 404.
+
+The corrected upstream README additionally verifies a typed JSON intermediate representation, validation before delivery, machine-readable diagnostics, last-known-good preview behavior, source-backed architecture mode, and Architecture/Workflow/Sequence/Data Flow/Lifecycle diagram types. These capabilities strengthen its relevance to deterministic artifact generation and Quality Gate experiments.
