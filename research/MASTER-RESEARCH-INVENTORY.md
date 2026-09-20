@@ -247,3 +247,22 @@ The framework must be able to prove that critical requirements remain traceable 
 ### Research priority
 
 Primary/authoritative sources should include standards and specifications where applicable (IETF OAuth, OpenID Foundation/OIDC, OWASP, OpenAPI/JSON Schema, W3C accessibility) plus implementation-pattern evidence. Product-specific authentication choices remain decisions, not universal defaults.
+
+
+## L. Recovery closure — 2026-09-20
+
+### Engineering baseline disposition
+The material engineering domains required to start Framework v0.1 refinement now have primary-source-backed records in the KB, including UX/accessibility, frontend-backend contracts, browser authentication, authorization, application/API security, functional modeling, architecture/NFR, SDD, WBS/forecasting, testing/conformance, CI/CD gates, observability/SRE/RCA, graph/context technologies, agent orchestration/memory/MCP and agent observability.
+
+### Remaining references
+The unresolved social/visual items in section I are retained under `research/recovery-disposition.md` as **REFERENCE-ONLY**, **UNVERIFIED** or **DEFERRED**. They are not evidence dependencies for Framework v0.1 and therefore do not block the recovery gate.
+
+Exact implementation claims for those items must not be promoted without source verification or reproduction.
+
+### Reconciliation rule
+Where an older row in this inventory still says `RESEARCH REQUIRED` but a dedicated verified record now exists under `methods/`, `technologies/`, `patterns/` or `project-reviews/`, the dedicated record is authoritative. This master inventory remains the recovery ledger, not the detailed evidence source.
+
+### Recovery milestone
+**KB RECOVERY & CORPUS MIGRATION v1: COMPLETE**
+
+This means the corpus is sufficiently materialized to refine the framework. It does **not** mean every reference on the internet has been verified, every candidate technology has been selected, or every hypothesis has become a decision.
