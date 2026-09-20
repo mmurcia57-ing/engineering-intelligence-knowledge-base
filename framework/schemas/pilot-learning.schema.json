@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Pilot Learning Extraction",
+  "type": "object",
+  "required": [
+    "finding",
+    "projectEvidence",
+    "hypothesis",
+    "frameworkDisposition",
+    "skillDisposition"
+  ],
+  "properties": {
+    "finding": {
+      "type": "string"
+    },
+    "projectEvidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "hypothesis": {
+      "type": "string"
+    },
+    "frameworkDisposition": {
+      "enum": [
+        "PROMOTE",
+        "REFINE",
+        "HOLD",
+        "REJECT"
+      ]
+    },
+    "skillDisposition": {
+      "enum": [
+        "CANDIDATE",
+        "PROMOTE",
+        "HOLD",
+        "NONE"
+      ]
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}
