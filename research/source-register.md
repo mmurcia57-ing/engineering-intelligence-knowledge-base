@@ -13,7 +13,7 @@ Labels: **VERIFIED FACT**, **VERIFIED-DEVELOPMENT**, **REFERENCE-ONLY**, **UNVER
 | SRC-005 | OpenTelemetry | https://opentelemetry.io/docs/ | VERIFIED FACT | Telemetry foundation. |
 | SRC-006 | OTel Entities | https://opentelemetry.io/docs/specs/otel/entities/ | VERIFIED-DEVELOPMENT | Entity model remains Development. |
 | SRC-007 | OTel GenAI semantics | https://opentelemetry.io/docs/specs/semconv/registry/attributes/gen-ai/ | VERIFIED-DEVELOPMENT | Agent/model/tool semantic conventions evolving. |
-| SRC-008 | Graphify | https://github.com/safishamsi/graphify | VERIFIED FACT | Upstream identity/capabilities; external benchmark claims remain unverified. |
+| SRC-008 | Graphify | https://github.com/Graphify-Labs/graphify | VERIFIED FACT | Upstream identity/capabilities; external benchmark claims remain unverified. |
 | SRC-009 | Toise | https://github.com/toise-dev/toise | VERIFIED FACT | Temporal infrastructure graph; alpha/pre-1.0 boundary retained. |
 | SRC-010 | Microsoft GraphRAG | https://github.com/microsoft/graphrag | VERIFIED FACT | Research project; upstream currently maintenance-oriented. |
 | SRC-011 | Neo4j GraphRAG | https://github.com/neo4j/neo4j-graphrag-python | VERIFIED FACT | First-party Python GraphRAG package. |
@@ -55,3 +55,33 @@ Labels: **VERIFIED FACT**, **VERIFIED-DEVELOPMENT**, **REFERENCE-ONLY**, **UNVER
 Social posts, Reels, Shorts and visually interesting demonstrations remain **REFERENCE-ONLY** unless their technical claims are independently verified. They are preserved in the master inventory/recovery disposition but are not used as foundations for Framework v0.1 decisions.
 
 This register is the normalized baseline of sources currently relied upon by the KB. Individual records may contain additional specialized sources.
+
+
+## Source Integrity Audit v1 — 2026-09-20
+
+Audit scope: the current Framework/KB evidence baseline and project-review sources were checked for source identity, upstream/canonical ownership, claim class, maturity and whether unresolved social references are being used as engineering evidence.
+
+### Corrections and material findings
+- **Archify:** canonical upstream is `tt-a1i/archify`; the previously recorded `tt-ai` owner was incorrect and has already been corrected.
+- **Graphify:** `safishamsi/graphify` now redirects to canonical `Graphify-Labs/graphify`. The source register now uses the canonical repository.
+- **OpenTelemetry Entities:** source identity is valid, but the Entity Data Model remains **Development**; it must not be represented as a stable standard.
+- **Cloudflare Security Audit Skill:** canonical Cloudflare repository verified; its six-phase audit and independent-verification design are source-backed.
+- **Spec Kit:** current official documentation verified; it now exposes SDD, bug fixing and idea assessment as independent processes and includes convergence.
+- Archify, ATSMATRIX repositories, OpenSRE, RCA Agent, ServiceRadar and Toise repository identities were rechecked against GitHub and resolved to the recorded owners.
+- Social/video references remain discovery evidence only unless independently triangulated.
+
+### Integrity labels
+- `SOURCE-VERIFIED`: source identity/canonical location checked.
+- `CLAIM-VERIFIED`: specific statement checked against an authoritative/upstream source.
+- `PROJECT-REPORTED`: upstream project states the claim, but independent reproduction is absent.
+- `REFERENCE-ONLY`: discovery/visual/educational source; not a technical authority.
+- `UNVERIFIED`: evidence is currently insufficient.
+- `DEFERRED`: not required for the current framework baseline.
+
+### Gate rule
+A reachable URL is not sufficient for `CLAIM-VERIFIED`. Framework decisions must trace to claim-level evidence or an explicit experiment.
+
+### Result
+**SOURCE INTEGRITY GATE v1: PASS WITH CORRECTIONS**
+
+The baseline can proceed to Framework v0.1 refinement. Deferred/reference-only sources remain prohibited from supporting framework decisions until promoted through verification.
