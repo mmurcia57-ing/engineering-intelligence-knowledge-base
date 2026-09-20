@@ -190,3 +190,60 @@ An item leaves this inventory and becomes a durable KB record only after:
 7. decisions are recorded separately from research.
 
 This document remains the corpus-level completeness checklist.
+
+
+## K. UX, frontend/backend contracts, identity and application security
+
+This corpus is **not limited to graph visualization**. A production engineering framework must cover the complete user-to-backend trust and interaction path.
+
+| Area | Topics to research and persist | State |
+|---|---|---|
+| UX architecture | information architecture, journeys, task flows, navigation, progressive disclosure, empty/loading/error states, accessibility, responsive behavior, design systems | RECOVERED AS REQUIRED DOMAIN |
+| Technical UI | dashboards, command centers, graph UX, tables/timelines, filtering, search, drill-down, real-time state, high-density interfaces | RECOVERED AS REQUIRED DOMAIN |
+| Frontend architecture | SPA/SSR trade-offs, component boundaries, state management, routing, BFF patterns, performance budgets, frontend observability | RESEARCH REQUIRED |
+| Frontend ↔ backend contracts | OpenAPI, JSON Schema, contract-first design, schema/version compatibility, validation, error contracts, idempotency, pagination, async APIs | RESEARCH REQUIRED |
+| Contract assurance | consumer/provider contract testing, integration tests, E2E tests, schema checks in CI/CD, compatibility gates | RESEARCH REQUIRED |
+| Authentication | OAuth 2.x, OpenID Connect, sessions, tokens, PKCE, BFF/token mediation, workload/service identity | RESEARCH REQUIRED |
+| Authorization | RBAC, ABAC, ReBAC, policy-based access control, least privilege, resource/action modeling | RESEARCH REQUIRED |
+| API/application security | OWASP ASVS, OWASP API Security, threat modeling, input/output validation, CSRF/CORS, secrets, rate limiting | RESEARCH REQUIRED |
+| Identity lifecycle | provisioning, federation, session lifecycle, revocation, service accounts/workload identities, auditability | RESEARCH REQUIRED |
+| Zero Trust boundaries | user/device/workload identity, trust boundaries, continuous verification concepts | RESEARCH REQUIRED |
+| UX security | secure defaults, re-authentication, privileged actions, confirmation patterns, error/privacy leakage | RESEARCH REQUIRED |
+| Observability across UI/API | correlation IDs, frontend telemetry/RUM, distributed tracing, user journey → API → service linkage | RESEARCH REQUIRED |
+
+### Required assurance chain
+
+```
+User / Persona
+  → UX Journey
+  → UI State
+  → Frontend Component
+  → API Contract
+  → Authentication
+  → Authorization / Policy
+  → Backend Use Case
+  → Domain/Data Rules
+  → Persistence / External Dependency
+  → Response Contract
+  → UI State
+  → Telemetry / Audit / Evidence
+```
+
+The framework must be able to prove that critical requirements remain traceable across this chain.
+
+### Candidate Quality Gates
+
+- UX flow covers happy path, alternate paths and failures.
+- UI does not invent backend capabilities absent from a contract.
+- API implementation conforms to versioned contract.
+- Consumer/provider compatibility is tested.
+- Authentication mechanism is appropriate to client type and threat model.
+- Authorization is enforced server-side; frontend visibility is not an authorization control.
+- Privileged actions have explicit policy/audit requirements.
+- Security controls and trust boundaries are represented in architecture.
+- Critical user journeys are observable end-to-end.
+- Accessibility and performance criteria are testable, not merely visual preferences.
+
+### Research priority
+
+Primary/authoritative sources should include standards and specifications where applicable (IETF OAuth, OpenID Foundation/OIDC, OWASP, OpenAPI/JSON Schema, W3C accessibility) plus implementation-pattern evidence. Product-specific authentication choices remain decisions, not universal defaults.
