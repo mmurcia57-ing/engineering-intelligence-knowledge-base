@@ -94,3 +94,9 @@ Metrics are system/process signals, not individual productivity scores.
 
 ## Current maturity
 DRAFT FOR STRESS TEST. Do not call this v1.0 and do not automate it as a Skill until stress tests and a real pilot demonstrate convergence.
+
+
+## UX / functional spine
+`Outcome/Capability → Persona/Context → Journey/Task → Information Architecture → Functional Rules/States → Interaction → Wireframe/Prototype → Visual/System Design → Engineering Contract → UX Assurance → Evidence`
+
+Screens are outputs of the model, not the product scope. Existing screens are inspected under NO-REDO and may be preserved, repaired, extended or superseded only with evidence.
