@@ -28,3 +28,37 @@ Favor fast/local tests for broad coverage and reserve expensive/brittle E2E test
 
 ## Evidence
 A Quality Gate must name the evidence it accepts. “Tests passed” without identifying scope/layer is insufficient.
+
+
+## Unit and regression assurance
+
+Unit testing is a first-class implementation gate, not an implicit sub-item.
+
+For changed business/domain behavior, applicable tests should exercise:
+- expected behavior;
+- boundary conditions;
+- invalid input;
+- failure/exception paths;
+- state transitions and invariants;
+- regression reproduction for corrected defects.
+
+Test generation by an AI agent must remain traceable to requirements, acceptance criteria, risks or a reproduced defect. Code coverage is a diagnostic signal, not sufficient evidence of correctness.
+
+## Security assurance is orthogonal to functional testing
+
+The assurance stack must additionally determine which security evidence applies:
+- static application security analysis;
+- dependency/software-composition analysis;
+- secret detection;
+- authentication/session tests;
+- authorization positive **and negative** tests;
+- input/output validation;
+- API abuse cases;
+- threat-informed manual or agent-assisted review;
+- dynamic/runtime security verification where justified.
+
+A functional PASS cannot imply a security PASS, and a security audit cannot imply functional correctness.
+
+## Convergence rule for AI reviewers
+
+Agent-reported vulnerabilities are findings/hypotheses until validated against the actual code path, configuration, dependency or reproducible behavior. The final Quality Gate records evidence and disposition, not merely the agent narrative.
