@@ -11,6 +11,8 @@
 | AI capability existed but not useful in experience | governed assist surface | infrastructure presence ≠ productized capability | Capability Mission Closure | inspect user-facing mission and safe degradation | PROMOTED |
 | Corporate unknowns could tempt invented implementation | IAM/Source Authority/provider/volumes TBD | local proof must not become corporate claim | External Dependency classification | preserve TBD, never fabricate | PROMOTED |
 | Pilot improvements were not automatically becoming framework assets | user review after convergence | pilot incomplete until learning extraction | Pilot Learning Extraction Protocol | emit extraction register before pilot closure | PROMOTED |
+| Autonomous execution needs a phase orchestrator | user expected the Framework to continue after discovery without feature-by-feature prompting | discovery must feed a deterministic lifecycle loop | Autonomous Lifecycle Orchestrator v0.1 | continue until genuine blocker; do not repeatedly ask permission | PROMOTED |
+| Separate Framework repository is needed | reusable rules are accumulating in KB | KB is knowledge; Framework is executable/versioned method | Framework bootstrap manifest | Skill references versioned Framework, not ad-hoc KB prose | READY-TO-BOOTSTRAP |
 | Numeric maturity thresholds lack cross-project evidence | VECTOR is first calibrated project | do not invent thresholds | calibration backlog | qualitative evidence-based depth for now | HOLD |
 
 ## Next calibration targets
