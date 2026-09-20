@@ -57,3 +57,11 @@ For production-impacting work, the framework selects deployment and post-deploym
 
 ## Rule
 A project may use fewer gates/evidence only when the risk rationale is explicit. A project may require stronger gates when regulation, criticality, security, data sensitivity or operational blast radius warrants them.
+
+
+## UX/FUNCTIONAL READY
+Use when the current scope contains meaningful user interaction.
+
+PASS when, proportional to risk and uncertainty: actor/goal is known; required journeys/tasks are covered; functional rules and material UI/system states are explicit; alternate/failure/recovery paths are addressed; IA/navigation is sufficient; data/contract needs are feasible; AuthN/AuthZ implications are known; accessibility expectations are defined; acceptance evidence is defined; and no material ambiguity is being delegated to the implementation agent.
+
+A static mockup or happy-path screenshot alone cannot satisfy this gate for stateful software.
