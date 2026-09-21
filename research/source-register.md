@@ -66,6 +66,10 @@ Labels: **VERIFIED FACT**, **VERIFIED-DEVELOPMENT**, **REFERENCE-ONLY**, **UNVER
 | SRC-056 | Perses | https://github.com/perses/perses | VERIFIED FACT | CNCF dashboard/visualization architecture contrast reference. |
 | SRC-057 | Grafana Node/Service Graph | https://github.com/grafana/grafana | VERIFIED FACT | Graph/timeline/flamegraph visualization mechanics reference. |
 
+| SRC-058 | Keep | https://github.com/keephq/keep | VERIFIED FACT | Incident workspace + topology + timeline + workflows + AI implementation inspected. |
+| SRC-059 | Toise ADR 0018 | https://github.com/toise-dev/toise/blob/main/docs/architecture/adr/0018-exact-identity-matching.md | VERIFIED FACT | Exact identity adopted after documented fuzzy-match over-merges. |
+| SRC-060 | Toise ADR 0020 | https://github.com/toise-dev/toise/blob/main/docs/architecture/adr/0020-weighted-multi-source-identity.md | PROJECT PROPOSAL | Non-destructive evidence-bearing same_as resolution; proposed, not implemented. |
+
 ## Evidence boundary
 
 Social posts, Reels, Shorts and visually interesting demonstrations remain **REFERENCE-ONLY** unless their technical claims are independently verified. They are preserved in the master inventory/recovery disposition but are not used as foundations for Framework v0.1 decisions.
