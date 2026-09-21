@@ -22,6 +22,8 @@ Legend: **S** strong implementation evidence, **P** partial/specialized evidence
 | Caretta | S | — | P | — | — | Edges originate from observed network relationships | ADOPT PRINCIPLE |
 | Grafana | S | S | S | P | P | Powerful specialized visualizations; panel composition != investigation IA | ADAPT MECHANICS |
 | Perses | — | P | P | — | — | Strong dashboard/plugin architecture; useful contrast | SELECTIVE ADOPT / REJECT DASHBOARD-FIRST |
+| Keep | S | S | S | S | S | Incident context spans topology/timeline/evidence into governed workflow execution | ADAPT |
+| Toise | S | S | S | — | — | Event-backed temporal graph; exact identity; inferred resolution kept separate from facts | ADOPT PRINCIPLES / ADAPT |
 
 ## Convergence
 
@@ -80,3 +82,4 @@ Further research should prioritize implementations that close:
 - temporal topology/history;
 - large-graph interaction and accessibility;
 - AI-assisted investigation with explicit provenance/uncertainty.
+- durable outcome verification after remediation/workflow execution.
