@@ -59,6 +59,13 @@ Labels: **VERIFIED FACT**, **VERIFIED-DEVELOPMENT**, **REFERENCE-ONLY**, **UNVER
 | SRC-050 | Caretta | https://github.com/groundcover-com/caretta | VERIFIED FACT | eBPF-observed dependency-map reference. |
 | SRC-051 | Robusta | https://github.com/robusta-dev/robusta | VERIFIED FACT | Alert timeline + Kubernetes change-tracking reference. |
 
+| SRC-052 | HyperDX | https://github.com/hyperdxio/hyperdx | VERIFIED FACT | Service Map + advanced timeline implementation inspected. |
+| SRC-053 | SigNoz | https://github.com/SigNoz/signoz | VERIFIED FACT | OTel-native correlated observability/timeline implementation reference. |
+| SRC-054 | Jaeger UI | https://github.com/jaegertracing/jaeger-ui | VERIFIED FACT | Dependency graph + trace timeline/flamegraph/diff implementation reference. |
+| SRC-055 | OneUptime | https://github.com/OneUptime/oneuptime | VERIFIED FACT | Incident-management and operational-continuation platform reference. |
+| SRC-056 | Perses | https://github.com/perses/perses | VERIFIED FACT | CNCF dashboard/visualization architecture contrast reference. |
+| SRC-057 | Grafana Node/Service Graph | https://github.com/grafana/grafana | VERIFIED FACT | Graph/timeline/flamegraph visualization mechanics reference. |
+
 ## Evidence boundary
 
 Social posts, Reels, Shorts and visually interesting demonstrations remain **REFERENCE-ONLY** unless their technical claims are independently verified. They are preserved in the master inventory/recovery disposition but are not used as foundations for Framework v0.1 decisions.
