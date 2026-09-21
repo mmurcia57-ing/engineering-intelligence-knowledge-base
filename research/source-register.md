@@ -50,6 +50,15 @@ Labels: **VERIFIED FACT**, **VERIFIED-DEVELOPMENT**, **REFERENCE-ONLY**, **UNVER
 | SRC-042 | Architecture/Compliance fitness functions | https://martinfowler.com/articles/devops-compliance.html | VERIFIED FACT | Executable pipeline governance/fitness-function reference. |
 | SRC-043 | Agent harness engineering | https://martinfowler.com/articles/harness-engineering.html | VERIFIED FACT | Deterministic sensors + probabilistic review pattern. |
 
+| SRC-044 | Coroot | https://github.com/coroot/coroot | VERIFIED FACT | Service map + incident/RCA implementation inspected. |
+| SRC-045 | OpenObserve | https://github.com/openobserve/openobserve | VERIFIED FACT | Unified observability/service graph/incidents reference. |
+| SRC-046 | Skyhook Radar | https://github.com/skyhook-io/radar | VERIFIED FACT | Topology + event/resource-change timeline implementation reference. |
+| SRC-047 | Cribl APM | https://github.com/criblio/apm | VERIFIED FACT | Emerging React APM/war-room/investigation reference; lower maturity weight. |
+| SRC-048 | Pixie | https://github.com/pixie-io/pixie | VERIFIED FACT | Kubernetes service-map to traffic/request drill-down reference. |
+| SRC-049 | Uptrace | https://github.com/uptrace/uptrace | VERIFIED FACT | OTel APM/service graph/annotations reference. |
+| SRC-050 | Caretta | https://github.com/groundcover-com/caretta | VERIFIED FACT | eBPF-observed dependency-map reference. |
+| SRC-051 | Robusta | https://github.com/robusta-dev/robusta | VERIFIED FACT | Alert timeline + Kubernetes change-tracking reference. |
+
 ## Evidence boundary
 
 Social posts, Reels, Shorts and visually interesting demonstrations remain **REFERENCE-ONLY** unless their technical claims are independently verified. They are preserved in the master inventory/recovery disposition but are not used as foundations for Framework v0.1 decisions.
