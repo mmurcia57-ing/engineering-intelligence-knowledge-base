@@ -70,6 +70,8 @@ Labels: **VERIFIED FACT**, **VERIFIED-DEVELOPMENT**, **REFERENCE-ONLY**, **UNVER
 | SRC-059 | Toise ADR 0018 | https://github.com/toise-dev/toise/blob/main/docs/architecture/adr/0018-exact-identity-matching.md | VERIFIED FACT | Exact identity adopted after documented fuzzy-match over-merges. |
 | SRC-060 | Toise ADR 0020 | https://github.com/toise-dev/toise/blob/main/docs/architecture/adr/0020-weighted-multi-source-identity.md | PROJECT PROPOSAL | Non-destructive evidence-bearing same_as resolution; proposed, not implemented. |
 
+| SRC-061 | NightWarden | https://github.com/PrabhatMattoo/NightWarden | VERIFIED FACT | Evidence IDs, candidate/finding records, citation refusal and gated-write implementation inspected; emerging/low-adoption reference. |
+
 ## Evidence boundary
 
 Social posts, Reels, Shorts and visually interesting demonstrations remain **REFERENCE-ONLY** unless their technical claims are independently verified. They are preserved in the master inventory/recovery disposition but are not used as foundations for Framework v0.1 decisions.
